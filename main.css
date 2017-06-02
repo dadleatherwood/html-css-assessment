@@ -1,0 +1,121 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  background: url("img/main-bg.jpeg");
+  background-size: cover;
+  height: 100vh;
+
+}
+
+.nav {
+  font-size: 25px;
+  font-weight: 900;
+}
+
+.nav-list {
+  display:flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 50px 100px;
+  color: white;
+}
+
+.nav-item {
+  float:left;
+  display: inline;
+}
+
+.nav-icon {
+  height: 2em;
+  width: 2em;
+  display: none;
+  background: url("http://www.lakewoodcollege.edu/images/hamburger.png");
+  background-size: contain;
+  margin: 25px;
+}
+
+.twitter-icon {
+  width: 75px;
+  display: none;
+  background: url("img/twitter-xxl.png");
+  background-size: contain;
+}
+
+.facebook-icon {
+  width: 10px;
+  display: none;
+  background: url("img/facebook-xxl.png");
+  background-size: cover;
+}
+
+.portfolio {
+  padding-top: 250px;
+  width: 100%;
+  text-align: center;
+  color: white;
+
+}
+
+.portfolio h1 {
+  font-size: 100px;
+}
+
+.portfolio p {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  padding-top: 250px;
+}
+.down-menu {
+  height: 2em;
+  width: 2em;
+  background: url("img/download.png");
+  background-size:contain;
+
+
+
+}
+
+
+
+  @media only screen and (max-width: 768px) {
+    .nav {
+      width: 100%;
+      position: relative;
+    }
+    .nav-list {
+      position: absolute;
+      flex-direction: column;
+      left: -100%;
+    }
+    .nav-item {
+      width: 100%;
+      float:none;
+    }
+    .nav-icon {
+      display:inline-block;
+      float:left
+      padding: 50px;
+    }
+    .facebook-icon {
+      display: inline-block;
+      float: right;
+      padding: 50px;
+    }
+    .twitter-icon {
+      display: inline-block;
+      float:right;
+      padding: 50px;
+    }
+
+  }
+}
